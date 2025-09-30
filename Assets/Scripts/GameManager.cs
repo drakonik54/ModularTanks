@@ -151,7 +151,7 @@ public class GameManager : MonoBehaviour
             Rigidbody tankRigidbody = tank.GetComponent<Rigidbody>();
             if (tankRigidbody != null)
             {
-                tankRigidbody.velocity = Vector3.zero;
+                tankRigidbody.linearVelocity = Vector3.zero;
                 tankRigidbody.angularVelocity = Vector3.zero;
             }
             
@@ -175,7 +175,7 @@ public class GameManager : MonoBehaviour
             Rigidbody projectileRigidbody = projectile.GetComponent<Rigidbody>();
             if (projectileRigidbody != null)
             {
-                projectileRigidbody.velocity = Vector3.zero;
+                projectileRigidbody.linearVelocity = Vector3.zero;
             }
         }
     }
